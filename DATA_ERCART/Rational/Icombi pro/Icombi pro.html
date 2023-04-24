@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+    <link rel="icon" type="image/x-icon" href="../../../img/fav/myfav.ico">
+    <link rel="stylesheet" href="../../../plug/searchable-a11y-accordion/searchable-a11y-accordion/dist/css/a11yAccordion.min.css">
+    <script src="../../../plug/searchable-a11y-accordion/searchable-a11y-accordion/dist/js/a11yAccordion.js"></script>
+    <script src="../../../JQ/jquery-ui-1.13.2.custom/jquery-ui-1.13.2.custom/jquery-ui.min.js"></script>
+    <script src="../../../JQ/jquery-3.6.1.min.js"></script>
+    <style>
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+        @font-face{
+            font-family: Iran;
+            src: url("../../../Font/IRANSansWeb.woff") format("woff");
+        }
+        body { 
+            background: #fafafa;
+            direction: rtl;
+            font-family: Iran;
+        }
+        .container {
+            margin: 70px auto;
+            max-width: 1500px;
+        }
+        .container>h1{
+            display: block;
+            margin: 0 120px 0 20px;
+            font-weight: bold;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+        }
+        .a11yAccordion .a11yAccordionItem .a11yAccordionHideArea.visiblea11yAccordionItem{
+            box-shadow: none;
+            color: black;
+        }
+
+        .a11yAccordion .a11yAccordionItem .a11yAccordionItemHeader{
+            background-color: #170060;
+            color: white;
+            text-transform: capitalize;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-weight: bolder;
+        }
+
+        .a11yAccordion .a11yAccordionItem .a11yAccordionItemHeader .a11yAccordionItemHeaderLink{
+            float: left;
+            color: rgb(211, 211, 211);
+            font-size: 15px;
+        }
+
+        .a11yAccordionSearch{
+            width: 100%;
+            height: 40px;
+            border-radius: 0;
+            padding-right: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Icombi pro : خطا مورد نظر را جست و جو کنید.</h1>
+        <ul id="accordion1" class="a11yAccordion a11yAccordion-light">
+            <li class="a11yAccordionItem">
+                <div class="a11yAccordionItemHeader">
+                    خطا 10
+                </div>
+                <div class="a11yAccordionHideArea">
+                    <p>
+                        <b>علت : </b>
+                        سطح آب در ژنراتور بخار (بویلر) در طول عملکرد اتوماتیک پمپ کاهش نمی‌یابد.                         <br>
+                        <b>دلایل ممکن : </b> اتصال کوتاه سنسور سطح، رسوب گرفتن یا کثیف بودن پمپ و شیلنگ، خرابی فیوزها، خرابی برد O/I یا برد کنترل پمپ، معیوب 
+                        بودن کابل یا سوکت 
+                        <br>
+                        <a href="https://drive.google.com/file/d/1g18nqNQWfVTNy4eifB5ZqzeMtyD2Sg30/preview" target="_blank">توضیحات بیشتر</a>
+                    </p>
+                </div>
+            </li>
+            <li class="a11yAccordionItem">
+                <div class="a11yAccordionItemHeader">
+                    خطا 20
+                </div>
+                <div class="a11yAccordionHideArea">
+                    <p>
+                        <b>علت : </b>خرابی سنسور های B5,B4,B2,B1                       
+                        <br>
+                        <b>دلایل ممکن : </b>
+                        قطعی یا معیوب شدن سنسور
+                        <br>
+                        <a href="https://drive.google.com/file/d/1g18nqNQWfVTNy4eifB5ZqzeMtyD2Sg30/preview" target="_blank">توضیحات بیشتر</a>
+                    </p>
+                </div>
+            </li>
+            <li class="a11yAccordionItem">
+                <div class="a11yAccordionItemHeader">
+                    خطا 28
+                </div>
+                <div class="a11yAccordionHideArea">
+                    <p>
+                        <b>علت : </b>
+                        مقدار بیش از حد دمای اندازه گیری شده توسط ترموکوپل‌های بویلر و محفظه            
+                        <br>
+                        <b>دلایل ممکن : </b>
+                        رسوب گرفتگی، خرابی سنسور
+                        <br>
+                        <a href="https://drive.google.com/file/d/1vQMAnKXiNIEnUBIW5d8Eu8s6mJgmj2a-/preview" target="_blank">توضیحات بیشتر</a>
+                    </p>
+                </div>
+            </li>
+            <li class="a11yAccordionItem">
+                <div class="a11yAccordionItemHeader">
+                    خطا 29
+                </div>
+                <div class="a11yAccordionHideArea">
+                    <p>
+                        <b>علت : </b>
+                        گرمای بیش از اندازهی دستگاه  
+                        <br>
+                        <b>دلایل ممکن : </b>
+                        خرابی فن، خرابی برد، کثیف بودن فیلتر هوا                        
+                        <br>
+                        <a href="https://drive.google.com/file/d/11HFUmAYlRSZIOJiap1l5J2HypKhN8G42/preview" target="_blank">توضیحات بیشتر</a>
+                    </p>
+                </div>
+            </li>
+            <li class="a11yAccordionItem">
+                <div class="a11yAccordionItemHeader">
+                    خطا 32.1
+                </div>
+                <div class="a11yAccordionHideArea">
+                    <p>
+                        <b>علت : </b>
+                        احتراق در سیستم به درستی انجام نمیشود.
+                        <br>
+                        <b>دلایل ممکن : </b>
+                        عدم مطابقت نوع گاز، ایرادات الکترودها و برنر، قطعی و ایراد کابل          
+                        <br>
+                        <a href="https://drive.google.com/file/d/1ZgxvelKZCNOvIspg4DRRN4t7oYTAaI28/preview" target="_blank">توضیحات بیشتر</a>
+                    </p>
+                </div>
+            </li>
+            <li class="a11yAccordionItem">
+                <div class="a11yAccordionItemHeader">
+                    خطا 32.2
+                </div>
+                <div class="a11yAccordionHideArea">
+                    <p>
+                        <b>علت : </b>
+                        احتراق در سیستم به درستی انجام نمی‌شود.
+                        <br>
+                        <b>دلایل ممکن : </b>
+                        عدم تطابق نوع گاز ،اتصال کوتاه شدن الکترود ایگنیشن ،ایراد برنر ،خرابی شیر گاز   
+                        <br>
+                        <a href="https://drive.google.com/file/d/1gDXxslrH0N9tag38dSX-M5crRDHPl1I9/preview" target="_blank">توضیحات بیشتر</a>
+                    </p>
+                </div>
+            </li>
+            <li class="a11yAccordionItem">
+                <div class="a11yAccordionItemHeader">
+                    خطا 32.4
+                </div>
+                <div class="a11yAccordionHideArea">
+                    <p>
+                        <b>علت : </b>
+                        احتراق در سیستم به درستی انجام نمی‌شود.
+                        <br>
+                        <b>دلایل ممکن : </b>
+                        عدم تطابق نوع گاز ،ایراد بالور یا برنر
+                        <br>
+                        <a href="https://drive.google.com/file/d/1I23Vs2OYHWtIA-qsmWz2SxiUV9qhgVH0/preview" target="_blank">توضیحات بیشتر</a>
+                    </p>
+                </div>
+            </li>
+            <li class="a11yAccordionItem">
+                <div class="a11yAccordionItemHeader">
+                    خطا 33.1
+                </div>
+                <div class="a11yAccordionHideArea">
+                    <p>
+                        <b>علت : </b>
+                        ایگنیشن انجام نمی‌شود.
+                        <br>
+                        <b>دلایل ممکن : </b>
+                        عدم مطابقت نوع گاز ،ایراد برنر
+                        <br>
+                        <a href="https://drive.google.com/file/d/1RK33GEgrbNz8y9c8mejAsv72TI318PI-/preview" target="_blank">توضیحات بیشتر</a>
+                    </p>
+                </div>
+            </li>
+            <li class="a11yAccordionItem">
+                <div class="a11yAccordionItemHeader">
+                    خطا 33.2
+                </div>
+                <div class="a11yAccordionHideArea">
+                    <p>
+                        <b>علت : </b>
+                        ایگنیشن انجام نمی‌شود.
+                        <br>
+                        <b>دلایل ممکن : </b>
+                        عدم مطابقت نوع و سرعت گاز ،ایراد فن ،قطعی یا معیوب شدن bus
+                        <br>
+                        <a href="https://drive.google.com/file/d/1jOcHLlh_9_j2gf2dt-X-lIKwXK-c_kHF/preview" target="_blank">توضیحات بیشتر</a>
+                    </p>
+                </div>
+            </li>
+            <li class="a11yAccordionItem">
+                <div class="a11yAccordionItemHeader">
+                    خطا 33.4
+                </div>
+                <div class="a11yAccordionHideArea">
+                    <p>
+                        <b>علت : </b>
+                        ایگنیشن انجام نمی‌شود.
+                        <br>
+                        <b>دلایل ممکن : </b>
+                        عدم مطابقت نوع گاز ،جا به جا شدن فاز و نول
+                        <br>
+                        <a href="https://drive.google.com/file/d/1kvK9DN8vIAiDZu9VZu2D4wfm0GK_LQ41/preview" target="_blank">توضیحات بیشتر</a>
+                    </p>
+                </div>
+            </li>
+            <li class="a11yAccordionItem">
+                <div class="a11yAccordionItemHeader">
+                    خطا 33.5
+                </div>
+                <div class="a11yAccordionHideArea">
+                    <p>
+                        <b>علت : </b>
+                        ایگنیشن انجام نمیشود.
+                        <br>
+                        <b>دلایل ممکن : </b>
+                        عدم مطابقت نوع گاز ،ایراد برنر
+                        <br>
+                        <a href="https://drive.google.com/file/d/19XPuHe791PpFQktM2dxbMVW2pu3o2_uq/preview" target="_blank">توضیحات بیشتر</a>
+                    </p>
+                </div>
+            </li>
+            <li class="a11yAccordionItem">
+                <div class="a11yAccordionItemHeader">
+                    خطا 34.1
+                </div>
+                <div class="a11yAccordionHideArea">
+                    <p>
+                        <b>علت : </b>
+                        ارتباط با موتور فن بالا از طریق bus انجام نمی‌شود.
+                        <br>
+                        <b>دلایل ممکن : </b>
+                        ایراد موتور فن بالایی ،خرابی کنتاکتور ،ایراد کابل bus
+                        <br>
+                        <a href="https://drive.google.com/file/d/17Hi8oi3vH8WVTbR7Rkgrv3ocP_on8KQZ/preview" target="_blank">توضیحات بیشتر</a>
+                    </p>
+                </div>
+            </li>
+            <li class="a11yAccordionItem">
+                <div class="a11yAccordionItemHeader">
+                    خطا 34.2
+                </div>
+                <div class="a11yAccordionHideArea">
+                    <p>
+                        <b>علت : </b>
+                        ارتباط با موتور فن پایین در مدل ده سینی و موتور فن وسط در مدل بیست سینی از طریق bus انجام نمیشود.
+                        <br>
+                        <b>دلایل ممکن : </b>
+                        ایراد موتور فن ،خرابی کنتاکتور ،ایراد کابل bus
+                        <br>
+                        <a href="https://drive.google.com/file/d/10Jdt8sJfHyugBTIYSME_25V4bwGa-cyM/preview" target="_blank">توضیحات بیشتر</a>
+                    </p>
+                </div>
+            </li>
+            <li class="a11yAccordionItem">
+                <div class="a11yAccordionItemHeader">
+                    خطا 34.4
+                </div>
+                <div class="a11yAccordionHideArea">
+                    <p>
+                        <b>علت : </b>
+                        ارتباط با موتور فن پایین از طریق باس انجام نمی‌شود.
+                        <br>
+                        <b>دلایل ممکن : </b>
+                        ایراد موتور فن پایینی ،خرابی کنتاکتور ،ایراد کابل bus
+                        <br>
+                        <a href="https://drive.google.com/file/d/1Gx174mw6mUsVmwIwXWYwF6BdiqxR2BdY/preview" target="_blank">توضیحات بیشتر</a>
+                    </p>
+                </div>
+            </li>
+            <li class="a11yAccordionItem">
+                <div class="a11yAccordionItemHeader">
+                    خطا 34.16
+                </div>
+                <div class="a11yAccordionHideArea">
+                    <p>
+                        <b>علت : </b>
+                        ارتباط از طریق باس انجام نمی‌شود.
+                        <br>
+                        <b>دلایل ممکن : </b>
+                        ایراد برد O/I، ایراد کابل bus، ایراد کنتاکتور
+                        <br>
+                        <a href="https://drive.google.com/file/d/1qKw-UOxAZ-UEuiKr4_25iC5vOz3xTzXQ/preview" target="_blank">توضیحات بیشتر</a>
+                    </p>
+                </div>
+            </li>
+            <li class="a11yAccordionItem">
+                <div class="a11yAccordionItemHeader">
+                    خطا 34.32
+                </div>
+                <div class="a11yAccordionHideArea">
+                    <p>
+                        <b>علت : </b>
+                        ارتباط از طریق باس انجام نمی‌شود.
+                        <br>
+                        <b>دلایل ممکن : </b>
+                        ایراد برد کنترل پمپ ،ایراد کابل باس ،ایراد کنتاکتور
+                        <br>
+                        <a href="https://drive.google.com/file/d/16qpbo_Q7fPun8harkuZcQJeOlF3jxRYy/preview" target="_blank">توضیحات بیشتر</a>
+                    </p>
+                </div>
+            </li>
+            <li class="a11yAccordionItem">
+                <div class="a11yAccordionItemHeader">
+                    خطا 35
+                </div>
+                <div class="a11yAccordionHideArea">
+                    <p>
+                        <b>علت : </b>
+                        هود به درستی عمل نمیکند.
+                        <br>
+                        <b>دلایل ممکن : </b>
+                        ایراد تغذیه ،ایراد کابل
+                        <br>
+                        <a href="https://drive.google.com/file/d/15fFIh-bTfWDE6OX0U62ZUicjYlP8wUZK/preview" target="_blank">توضیحات بیشتر</a>
+                    </p>
+                </div>
+            </li>
+            <li class="a11yAccordionItem">
+                <div class="a11yAccordionItemHeader">
+                    خطا 37
+                </div>
+                <div class="a11yAccordionHideArea">
+                    <p>
+                        <b>علت : </b>
+                        مقادیر سنسور اختالف فشار-P1 -در محدوده مورد انتظار نیست.
+                        <br>
+                        <b>دلایل ممکن : </b>
+                        گرفتگی شیلنگهای متصل به سنسور P1 ،خرابی عایق ترموکوپل ،خرابی سنسورB4
+                        <br>
+                        <a href="https://drive.google.com/file/d/1zlt8L0IXogrpkSLP6gTcKAOctFdNPdcL/preview" target="_blank">توضیحات بیشتر</a>
+                    </p>
+                </div>
+            </li>
+            <li class="a11yAccordionItem">
+                <div class="a11yAccordionItemHeader">
+                    خطا 40
+                </div>
+                <div class="a11yAccordionHideArea">
+                    <p>
+                        <b>علت : </b>
+                        عمل نکردن پمپ رسوب زدا
+                        <br>
+                        <b>دلایل ممکن : </b>
+                        خرابی پمپ ،انسداد شلنگهای مربوطه
+                        <br>
+                        <a href="https://drive.google.com/file/d/1iLk6hxxyC5txZ3e-Tweb4eTYhpKvHcKD/preview" target="_blank">توضیحات بیشتر</a>
+                    </p>
+                </div>
+            </li>
+            <li class="a11yAccordionItem">
+                <div class="a11yAccordionItemHeader">
+                    خطا 41
+                </div>
+                <div class="a11yAccordionHideArea">
+                    <p>
+                        <b>علت : </b>
+                        عمل نکردن پمپ رسوب زدا
+                        <br>
+                        <b>دلایل ممکن : </b>
+                        رسوب گرفتگی نازل ،ایراد درشیلنگ ،فیلتر ،فشار آب ،ایراد سنسور CDS، خرابی شیر برقی ، ایراد
+                        فیوزهای برد ،خرابی سوکت و کابل
+                        <br>
+                        <a href="https://drive.google.com/file/d/1ih04IncYcIn9JnPsY4jlIzvI8cMqci55/preview" target="_blank">توضیحات بیشتر</a>
+                    </p>
+                </div>
+            </li>
+            <li class="a11yAccordionItem">
+                <div class="a11yAccordionItemHeader">
+                    خطا 42.1
+                </div>
+                <div class="a11yAccordionHideArea">
+                    <p>
+                        <b>علت : </b>
+                        نرسیدن آب به مخزن آبگیری
+                        <br>
+                        <b>دلایل ممکن : </b>
+                        ایراد یا انسداد شیر برقی ورودی-Y1 ، - نرسیدن برق به برد O/I، ایراد کابل ،قطعی شیر آب
+                        <br>
+                        <a href="https://drive.google.com/file/d/1b6nwQlQjcJpNWja1tj5x0BWGdRq-1Aji/preview" target="_blank">توضیحات بیشتر</a>
+                    </p>
+                </div>
+            </li>
+            <li class="a11yAccordionItem">
+                <div class="a11yAccordionItemHeader">
+                    خطا 42.2
+                </div>
+                <div class="a11yAccordionHideArea">
+                    <p>
+                        <b>علت : </b>
+                        عمل نکردن شیر برقی
+                        <br>
+                        <b>دلایل ممکن : </b>
+                        خرابی شیر برقی ،خرابی برد O/I، ایراد کابل و اتصاالت ،رسوب گرفتگی محفظه‌ی کنترل
+                        <br>
+                        <a href="https://drive.google.com/file/d/1yBsNPrrdQHZLKyz9Pxsg2_EklW2ZrsKw/preview" target="_blank">توضیحات بیشتر</a>
+                    </p>
+                </div>
+            </li>
+            <li class="a11yAccordionItem">
+                <div class="a11yAccordionItemHeader">
+                    خطا 42.3
+                </div>
+                <div class="a11yAccordionHideArea">
+                    <p>
+                        <b>علت : </b>
+                        عمل نکردن شیر برقی
+                        <br>
+                        <b>دلایل ممکن : </b>
+                        خرابی شیر برقی ،خرابی برد O/I، ایراد کابل و اتصاالت ،رسوب گرفتگی محفظه‌ی کنترل
+                        <br>
+                        <a href="https://drive.google.com/file/d/1-zC5BTWKP7O7W_mvQcmqeXQqhvtcfOkE/preview" target="_blank">توضیحات بیشتر</a>
+                    </p>
+                </div>
+            </li>
+            <li class="a11yAccordionItem">
+                <div class="a11yAccordionItemHeader">
+                    خطا 42.4
+                </div>
+                <div class="a11yAccordionHideArea">
+                    <p>
+                        <b>علت : </b>
+                        عمل نکردن شیر برقی
+                        <br>
+                        <b>دلایل ممکن : </b>
+                        خرابی شیر برقی ،خرابی برد O/I، ایراد کابل و اتصاالت ،رسوب گرفتگی محفظهی کنترل
+                        <br>
+                        <a href="https://drive.google.com/file/d/1V3jeJP0nuGmcypT4o_1LS8NpCsCnyjDT/preview" target="_blank">توضیحات بیشتر</a>
+                    </p>
+                </div>
+            </li>
+            <li class="a11yAccordionItem">
+                <div class="a11yAccordionItemHeader">
+                    خطا 42.5
+                </div>
+                <div class="a11yAccordionHideArea">
+                    <p>
+                        <b>علت : </b>
+                        وارد نشدن هوای تازه
+                        <br>
+                        <b>دلایل ممکن : </b>
+                        گرفتگی شیر برقی ،خرابی برد O/I، ایراد کابل
+                        <br>
+                        <a href="https://drive.google.com/file/d/1NPCbuVXMSw_sf17i2Ph7EQ1VpvJeLBVe/preview" target="_blank">توضیحات بیشتر</a>
+                    </p>
+                </div>
+            </li>
+            <li class="a11yAccordionItem">
+                <div class="a11yAccordionItemHeader">
+                    خطا 42.6
+                </div>
+                <div class="a11yAccordionHideArea">
+                    <p>
+                        <b>علت : </b>
+                        عمل نکردن شیر برقی
+                        <br>
+                        <b>دلایل ممکن : </b>
+                        خرابی شیر برقی ،خرابی برد O/I، ایراد کابل و اتصالات ،رسوب گرفتگی محفظه‌ی کنترل
+                        <br>
+                        <a href="https://drive.google.com/file/d/1CdHSqVqbM_qwdTHjCwYr3j2G_mQoTnK8/preview" target="_blank">توضیحات بیشتر</a>
+                    </p>
+                </div>
+            </li>
+            <li class="a11yAccordionItem">
+                <div class="a11yAccordionItemHeader">
+                    خطا 44
+                </div>
+                <div class="a11yAccordionHideArea">
+                    <p>
+                        <b>علت : </b>
+                        افزایش دما ،توسط حسگر محفظه پخت و پز B1 تشخیص داده نمی‌شود.
+                        <br>
+                        <b>دلایل ممکن : </b>
+                        خرابی هیتر بخار ،خرابی SSR، گرفتگی نازل‌ها
+                        <br>
+                        <a href="https://drive.google.com/file/d/17rA32vgHo4Zq0A1pdLYYpTWP1tnjrm0B/preview" target="_blank">توضیحات بیشتر</a>
+                    </p>
+                </div>
+            </li>
+            <li class="a11yAccordionItem">
+                <div class="a11yAccordionItemHeader">
+                    خطا 72
+                </div>
+                <div class="a11yAccordionHideArea">
+                    <p>
+                        <b>علت : </b>
+                        ====
+                        <br>
+                        <b>دلایل ممکن : </b>
+                        آپدیت نبودن دستگاه ،ایراد منبع تغذیه ،ایراد کابل و سوکت ،مشکل پین و دسته سیم ،خرابی سنسور
+                        ،ایراد اتصاالت بین سنسور و برد O / I
+                        <br>
+                        <a href="https://drive.google.com/file/d/120Qi3osNSsPnbxbC3Z2FWDWQ297AIfCE/preview" target="_blank">توضیحات بیشتر</a>
+                    </p>
+                </div>
+            </li>
+            <li class="a11yAccordionItem">
+                <div class="a11yAccordionItemHeader">
+                    خطا 90
+                </div>
+                <div class="a11yAccordionHideArea">
+                    <p>
+                        <b>علت : </b>
+                        ====
+                        <br>
+                        <b>دلایل ممکن : </b>
+                        ====
+                        <br>
+                        <a href="https://drive.google.com/file/d/1r5y-jJ2sqDMywW8vccPZzlnReH1CCI7-/preview" target="_blank">توضیحات بیشتر</a>
+                    </p>
+                </div>
+            </li>
+            <li class="a11yAccordionItem">
+                <div class="a11yAccordionItemHeader">
+                    خطا 110
+                </div>
+                <div class="a11yAccordionHideArea">
+                    <p>
+                        <b>علت : </b>
+                        ====
+                        <br>
+                        <b>دلایل ممکن : </b>
+                        ====
+                        <br>
+                        <a href="https://drive.google.com/file/d/1pKlkKKtPYalvK4ThH2APo9CBI1Ajjk57/preview" target="_blank">توضیحات بیشتر</a>
+                    </p>
+                </div>
+            </li>
+            <li class="a11yAccordionItem">
+                <div class="a11yAccordionItemHeader">
+                    خطا 120
+                </div>
+                <div class="a11yAccordionHideArea">
+                    <p>
+                        <b>علت : </b>
+                        ====
+                        <br>
+                        <b>دلایل ممکن : </b>
+                        ====
+                        <br>
+                        <a href="https://drive.google.com/file/d/17oc173iphE0x660uN8YfiTni3nQLnmop/preview" target="_blank">توضیحات بیشتر</a>
+                    </p>
+                </div>
+            </li>
+            <li class="a11yAccordionItem">
+                <div class="a11yAccordionItemHeader">
+                    Unit does not heat up (گرم نشدن دستگاه) - MFR4
+                </div>
+                <div class="a11yAccordionHideArea">
+                    <p>
+                        <b>علت : </b>
+                        خرابی برد ،ایراد ESTL، خرابی کنتاکتور ،ایراد المنت و سنسور
+                        <br>
+                        <a href="https://drive.google.com/file/d/1bX64a0-pmW4wnOp-K52j8p-0eU2qiA_y/preview" target="_blank">توضیحات بیشتر</a>
+                    </p>
+                </div>
+            </li>
+            <li class="a11yAccordionItem">
+                <div class="a11yAccordionItemHeader">
+                    CPU board (CPU برد) - MFR10
+                </div>
+                <div class="a11yAccordionHideArea">
+                        <a href="https://drive.google.com/file/d/18xSLNvNSITyz2ql1Pqxx92Sv1ylotTaZ/preview" target="_blank">توضیحات بیشتر</a>
+                    </p>
+                </div>
+            </li>
+            <li class="a11yAccordionItem">
+                <div class="a11yAccordionItemHeader">
+                    Implementation of second self test - MFR11
+                </div>
+                <div class="a11yAccordionHideArea">
+                        <a href="https://drive.google.com/file/d/1WVPO4IcKTcR7L2756iFLyfnHNCBTT-WU/preview" target="_blank">توضیحات بیشتر</a>
+                    </p>
+                </div>
+            </li>
+
+
+        </ul>
+    </div>
+
+
+    <script>
+        $(function(){
+            $('#download').hide();
+        });
+        </script>
+
+    <script>
+
+        try {
+        fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+            return true;
+        }).catch(function(e) {
+            var carbonScript = document.createElement("script");
+            carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+            carbonScript.id = "_carbonads_js";
+            document.getElementById("carbon-block").appendChild(carbonScript);
+        });
+        } catch (error) {
+        console.log(error);
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous">
+    </script>
+
+    <script src="../searchable-a11y-accordion/searchable-a11y-accordion/dist/js/a11yAccordion.js"></script>
+        
+    <script>
+            var myAccordion = new A11yAccordion({
+            parentSelector: '#accordion1',
+            overallSearch: true,
+            searchActionType: 'collapse'
+            });
+    </script>
+
+    <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-36251023-1']);
+            _gaq.push(['_setDomainName', 'jqueryscript.net']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+            
+    </script>
+
+</body>
+</html>

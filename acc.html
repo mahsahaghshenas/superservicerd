@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <title>acc</title>
+    <style>
+        .container{
+            margin-top: 50px;
+        }
+        .custom-table{
+            border-collapse:collapse;
+            width:100%;
+            border:solid 1px #c0c0c0;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-size:13px;
+
+        }
+        .custom-table th,.custom-table td{
+            text-align:left;
+            padding:8px;
+            border:solid 1px #c0c0c0
+        }
+        .custom-table th{
+            color:#000080
+        }
+        .custom-table tr:nth-child(odd){
+            background-color:#f7f7ff
+        }
+        .custom-table>thead>tr{
+            background-color:#dde8f7!important
+        }
+        .tbtn{
+            border:0;
+            outline:0;
+            background-color:transparent;
+            font-size:13px;
+            cursor:pointer;
+        }
+        .toggler{
+            display:none;
+        }
+        .toggler1{
+            display:table-row;
+        }
+        .custom-table a{
+            color: #0033cc;
+            text-decoration: none;
+        }
+        .custom-table a:hover{
+            color: #265cff;
+        }
+        .page-header{
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>      
+        <div class="container">
+                <table class="custom-table">
+                    <thead>
+                        <tr>
+                            <th>Filename</th>
+                            <th>Edition</th>
+                            <th>date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="3" class="page-header"><button type="button" class="tbtn"><i class="fa fa-plus-circle fa-minus-circle"></i>   Electrical Wiring Diagram</button></td>
+                        </tr>
+                        <tr class="toggler toggler1">
+                            <td><a href="https://drive.google.com/file/d/1UJFPfnCjc-EJEuaVaaZF8ljlTBo6-zDS/preview" target="_blank">NHT / EHT</a></td>
+                            <td>1</td>
+                            <td>01/09/2008</td>
+                        </tr>
+                        <tr class="toggler toggler1">
+                            <td><a href="https://drive.google.com/file/d/1iOhPHuE2QovI0BR9zAQPeqjHbabpn04y/preview" target="_blank">LU7 / WTU40</a></td>
+                            <td>1</td>
+                            <td>06/05/2009</td>
+                        </tr>
+                        <tr class="toggler toggler1">
+                            <td><a href="https://drive.google.com/file/d/1q91ZEp0FL8yAPc3JDUgZWd8Yi39WSUHZ/preview" target="_blank">LU7 / LU&00 / WTU40</a></td>
+                            <td>1</td>
+                            <td>29/05/2012</td>
+                        </tr>
+                        <tr class="toggler toggler1">
+                            <td><a href="https://drive.google.com/file/d/1R6xH7SVW8KOcQaHMBZ6hkM5FfnafsqPK/preview" target="_blank">NHT / KHT / EHT(EX LS9/WT55)</a></td>
+                            <td>1</td>
+                            <td>29/05/2012</td>
+                        </tr>
+                        
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td colspan="3" class="page-header"><button type="button" class="tbtn"><i class="fa fa-plus-circle"></i>    Service Manual</button></td>
+                        </tr>
+                        <tr class="toggler toggler1">
+                            <td><a href="https://drive.google.com/file/d/1bqQ3M5_KuECYOWq6RB4aDbliYBzrVIVD/preview" target="_blank">UNDERCOUNTER / HOOD TYPE / MANUAL POTWASHER WITH DP (GREEN AND CLEAN RANGE)</a></td>
+                            <td>1</td>
+                            <td>19/09/2018</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td colspan="3" class="page-header"><button type="button" class="tbtn"><i class="fa fa-plus-circle"></i>    Spare Parts Catalogue</button></td>
+                        </tr>
+                        <tr class="toggler toggler1">
+                            <td><a href="https://drive.google.com/file/d/15HfJelDdxLjN16Rsqsi45CDi1mwifWjX/preview" target="_blank">NHT/EHT (EX LS9/WT55)</a></td>
+                            <td>2</td>
+                            <td>04/11/2022</td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+<script>
+     $(document).ready(function () {
+                $(".tbtn").click(function () {
+                    $(this).parents(".custom-table").find(".toggler1").removeClass("toggler1");
+
+                    $(this).parents("tbody").find(".toggler").addClass("toggler1");
+
+                    $(this).parents(".custom-table").find(".fa-minus-circle").removeClass("fa-minus-circle");
+
+                    $(this).parents("tbody").find(".fa-plus-circle").addClass("fa-minus-circle");
+                });
+            });
+</script>
+</body>
+</html>

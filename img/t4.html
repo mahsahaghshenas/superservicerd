@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>t4</title>
+    <style>
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background:linear-gradient(25deg , rgb(0, 0, 60) , blue , rgb(0, 0, 60))
+        }
+        form{
+            width: 25%;
+            border: 2px solid white;
+            margin: 100px auto;
+            border-radius: 3px;
+            padding-bottom: 20px;
+        }
+        form>input{
+            display: block;
+            border: none;
+            outline: none;
+            padding: 10px;
+            margin: 15px auto;
+            border-radius: 5px;
+            width: 90%;
+            height: 30px;
+        }
+        form>label{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-size: 10px;
+            color: red;
+            background-color: rgb(255, 149, 149);
+            border: 1px solid red;
+            border-radius: 3px;
+            padding: 5px;
+            margin: 15px auto;
+            display: block;
+            width: 90%;
+            display: none;
+        }
+        form span{
+            width: 50%;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background-color: transparent;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            color: white;
+            border: 1px solid white;
+            margin: 10px auto;
+            display: block;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <input type="text" onkeyup="_test_user()" id="username" placeholder="Username">
+        <label for="" id="er1"> * Username is not correct</label>
+
+        <input type="password" id="password" placeholder="Password">
+        <label for="" id="er2"> * Password is not correct</label>
+        <span onclick="_test()">text</span>
+    </form>
+
+    <script>
+        var _user;
+        var _pass;
+        function _test(){
+            var _user = document.getElementById("username").value;
+            var _pass = document.getElementById("password").value;
+
+            console.log(_user + _pass)
+
+            if(_pass.length<8){
+                document.getElementById("er2").style.display="block";
+                document.getElementById("password").style.border="3px solid red";
+            }else{
+                document.getElementById("er2").style.display="none";
+                document.getElementById("password").style.border="5px solid greenyellow";
+            }
+
+            // end step  2 
+
+            if(_user.indexOf("@" , 0)==-1){
+                document.getElementById("er1").style.display="none";
+                document.getElementById("username").style.border="5px solid greenyellow";
+            }else{
+                document.getElementById("er1").style.display="block";
+                document.getElementById("username").style.border="3px solid red";
+
+            }
+        }
+
+        function _test_user(){
+            _user = document.getElementById("username").value;
+            if(_user.length>10){
+                var x = _user.substr(0 , 10);
+                document.getElementById("username").value=x;
+            }
+            console.log(_user);
+        }
+
+
+    </script>
+</body>
+</html>

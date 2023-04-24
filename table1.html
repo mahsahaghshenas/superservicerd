@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</head>
+<body>
+    
+    <div id="accordian">
+        
+        <tbody>
+            <tr>
+                <td colspan="3">Electrical Wiring Diagram
+                    <i class="fa fa-arrow-left"></i>
+                </td>
+            </tr>
+            <tr class="zir">
+                <td><a href="">NHT / EHT</a></td>
+                <td>1</td>
+                <td>01/09/2008</td>
+            </tr>
+            <tr class="zir">
+                <td>
+                    <a href="">LU7 / WTU40</a></td>
+                <td>1</td>
+                <td>06/05/2009</td>
+            </tr>
+            <tr  class="zir">
+                <td>
+                    <a href="">LU7 / LU&00 / WTU40</a>
+                </td>
+                <td>1</td>
+                <td>29/05/2012</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td colspan="3">Service Manual
+                    <i class="fa fa-arrow-left"></i>
+                </td>
+            </tr>
+            <tr class="zir">
+                <td><a href="">NHT / EHT</a></td>
+                <td>1</td>
+                <td>01/09/2008</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td colspan="3">Spare Parts Catalogue
+                    <i class="fa fa-arrow-left"></i>
+                </td>
+            </tr>
+            <tr class="zir">
+                <td><a href="">NHT/EHT (EX LS9/WT55)</a></td>
+                <td>2</td>
+                <td>04/11/2022</td>
+            </tr>
+        </tbody>
+    </div>
+    <script>
+        $(function() {
+          var icons = {
+            header: "ui-icon-circle-arrow-e",
+            activeHeader: "ui-icon-circle-arrow-s"
+          };
+          $( "#accordion" ).accordion({
+            icons: icons
+          });
+          $( "#toggle" ).button().on( "click", function() {
+            if ( $( "#accordion" ).accordion( "option", "icons" ) ) {
+              $( "#accordion" ).accordion( "option", "icons", null );
+            } else {
+              $( "#accordion" ).accordion( "option", "icons", icons );
+            }
+          });
+        });
+    </script>
+
+</body>
+</html>
