@@ -185,40 +185,40 @@ window.onclick = function(event) {
 }
 
 
-// $(document).ready(function() {
-//         $("form").submit(function(event) {
-//             event.preventDefault();
-//             var username = $("#uname").val();
-//             var password = $("#pwd").val();
-//             var users = [
-//             {
-//                 username: "Mohammad",
-//                 password: "Mirzaee123"
-//             },
-//             {
-//                 username: "Atefe",
-//                 password: "Es789"
-//             }
-//             ];
-//             var isValid = false;
-//             for (var i = 0; i < users.length; i++) {
-//             if (username === users[i].username && password === users[i].password) {
-//                 isValid = true;
-//                 break;
-//             }
-//             }
-//             if (isValid) {
-//             alert("Login successful!");
-//             window.location.href = "errorcart.html";
+$(document).ready(function() {
+        $("form").submit(function(event) {
+            event.preventDefault();
+            var username = $("#uname").val();
+            var password = $("#pwd").val();
+            var users = [
+            {
+                username: "Mohammad",
+                password: "Mirzaee123"
+            },
+            {
+                username: "Atefe",
+                password: "Es789"
+            }
+            ];
+            var isValid = false;
+            for (var i = 0; i < users.length; i++) {
+            if (username === users[i].username && password === users[i].password) {
+                isValid = true;
+                break;
+            }
+            }
+            if (isValid) {
+            alert("Login successful!");
+            window.location.href = "errorcart.html";
 
-//             } else {
-//             alert("Login failed. Please try again.");
-//             }
-//         });
-//         });
-//
+            } else {
+            alert("Login failed. Please try again.");
+            }
+        });
+        });
+
 </script>
-<script type="module">
+<!-- <script type="module">
   // Initialize the FirebaseUI Widget using Firebase.
   var ui = new firebaseui.auth.AuthUI(firebase.auth());
 
@@ -240,7 +240,7 @@ window.onclick = function(event) {
 
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
-</script>
+</script> -->
 
 </body>
 </html>
