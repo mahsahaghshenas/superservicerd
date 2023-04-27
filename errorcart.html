@@ -2461,9 +2461,9 @@
                 var tbr=0;
                 for(var qid=0;qid<rowLength;qid++){
                     tbr++;
-                    document.getElementById("myTable").rows[qid+1].cells[0].innerHTML=tbr;
+                    document.getElementById("myTable").rows[qid+1]._modele[0].innerHTML=tbr;
                 }
-                console.log(document.getElementById("myTable").rows[0].cells[0]);
+                console.log(document.getElementById("myTable").rows[0]._modele[0]);
             }
             setInterval(rowId,10000);
 
@@ -2503,6 +2503,7 @@
                     roww[i].style.display = 'none';
                 }
             }
+
         });
       
     </script>
