@@ -90,6 +90,7 @@
         <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name" >
 
         <table id="myTable">
+            <thead>
                 <tr class="header">
                     <th style="width:5%;">Id</th>
                     <th style="width:15%;">Brand</th>
@@ -97,7 +98,8 @@
                     <th style="width:50%;">Modele</th>
                     <th style="width:15%;">Icon</th>
                 </tr>
-
+            </thead>
+            <tbody>
                 <!-- Amana -->
                 <tr>
                     <td>1</td>
@@ -2440,6 +2442,7 @@
                     </td>
                     <td><img src="img/84.jpg" alt=""></td>
                 </tr>
+            </tbody>
         </table>
 
         <div class="footer">
@@ -2478,24 +2481,53 @@
         });
 
         // filteration 
-        function myFunction() {
-            var input, filter, table, tr, td, td2, i, txtValue;
-            input = document.getElementById("myInput");
-            filter = input.value.toUpperCase();
-            table = document.getElementById("myTable");
-            tr = table.getElementsByTagName("tr");
-            for (i = 0; i < tr.length; i++) {
-                td = tr[i].getElementsByTagName("td")[1];
-                if (td) {
-                txtValue = td.textContent || td.innerText;
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    tr[i].style.display = "";
-                }else {
-                    tr[i].style.display = "none";
-                    }
-                }       
+        // function myFunction() {
+        //     var input, filter, table, tr, td, td2, i, txtValue;
+        //     input = document.getElementById("myInput");
+        //     filter = input.value.toUpperCase();
+        //     table = document.getElementById("myTable");
+        //     tr = table.getElementsByTagName("tr");
+        //     for (i = 0; i < tr.length; i++) {
+        //         td = tr[i].getElementsByTagName("td")[1];
+        //         if (td) {
+        //         txtValue = td.textContent || td.innerText;
+        //         if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        //             tr[i].style.display = "";
+        //         }else {
+        //             tr[i].style.display = "none";
+        //             }
+        //         }       
+        //     }
+        // }
+
+
+        // new filteration
+        const searchInputt = document.getElementById('myInput');
+        const tablee = document.getElementById('myTable');
+        const roww = tablee.getElementsByTagName("tr");
+
+        searchInputt.addEventListener('keyup', function(){
+            const searchTerm = searchInputt.value.toLowerCase();
+
+            for(let i = 1; i<roww.length; i++){
+                const _id = roww[i].getElementsByTagName('td')[0].textContent.toLowerCase();
+
+                const _barnd = roww[i].getElementsByTagName('td')[1].textContent.toLowerCase();
+
+                const _category = roww[i].getElementsByTagName('td')[2].textContent.toLowerCase();
+
+                const _modele = roww[i].getElementsByTagName('td')[3].textContent.toLowerCase();
+
+                if (_id.indexOf(searchTerm) > -1 || _barnd.indexOf(searchTerm) > -1 || _category.indexOf(searchTerm) > -1 || _modele.indexOf(searchTerm) > -1){
+                    roww[i].style.display = '';
+                } else {
+                    roww[i].style.display = 'none';
+                }
             }
-        }
+
+
+
+        })
       
     </script>
 
