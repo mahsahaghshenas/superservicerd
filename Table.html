@@ -124,16 +124,19 @@
     </div>
 
     <script>
-        $(function(){
-            var i=0;
-            $("tbody").click(function(){
-                $(this).children().slideDown(500);
-                // $(this).parents("td").find("i").addClass("rotate");
-                if(i=0){
-                    $("tbody>tr>td>i").addClass("rotate");
-                }
-            });
+
+        $(function () {
+        var i = 0;
+        $("tbody").click(function () {
+            $(this).children().slideDown(500);
+            // $(this).parents("td").find("i").addClass("rotate");
+            if (i === 0) {
+            $("tbody>tr>td>i").addClass("rotate");
+            i = 1; // Set i to 1 after the first click
+            }
         });
+        });
+
 
     </script>
 </body>
