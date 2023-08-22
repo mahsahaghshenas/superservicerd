@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="../../../JQ/jquery-3.6.3.min.js"></script>
+
+    <title>REX71GF</title>
+    <style>
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+        .container{
+            margin-top: 50px;
+        }
+        table{
+            border-radius: 3px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        thead{
+            background-color: rgb(47, 47, 47);
+            color: white;
+        }
+        tbody>tr:first-child{
+            background-color: rgb(224, 224, 224);
+        }
+        tbody>tr:first-child>td>i{
+            width: 30px;
+            float: right;
+            display: inline-block;
+            font-size: 15px;
+            margin-top: 5px;
+            margin-left: 20px;
+        }
+        tbody>tr:first-child>td>i:hover{
+            color: rgb(178, 178, 178);
+        }
+        /* tbody>tr:first-child>td>i:active{
+            transform: rotate(-90deg);
+        } */
+        .zir{
+            font-size:15px;
+            margin-left: 15px;
+            display: none;
+        }
+        .rotate{
+            transform: rotate(-90deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>REX71GF</h2>
+        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam.</p> -->
+        <table class="table">
+            <thead>
+                <tr>
+                    <td>Filename</td>
+                    <td>Edition</td>
+                    <td>Date</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td colspan="3">Installation and Operation
+                        <i class="fa fa-arrow-left"></i>
+                    </td>
+                </tr>
+                <tr class="zir">
+                    <td><a href="https://drive.google.com/file/d/1VDVgWRknK4nt7vF2HpM6-YjMLNJIpOQw/preview" target="_blank">Click here</a></td>
+                    <td>1</td>
+                    <td>02/06/01</td>
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr>
+                    <td colspan="3">Service Manual
+                        <i class="fa fa-arrow-left"></i>
+                    </td>
+                </tr>
+                <tr class="zir">
+                    <td><a href="https://drive.google.com/file/d/1DqDvuedbAOz0YMnPnU9FpFbDeYVEm_FU/preview" target="_blank">Click here</a></td>
+                    <td>1</td>
+                    <td>02/06/01</td>
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr>
+                    <td colspan="3">Spare Parts
+                        <i class="fa fa-arrow-left"></i>
+                    </td>
+                </tr>
+                <tr class="zir">
+                    <td><a href="https://drive.google.com/file/d/1QZZUN9qAkWx_m5_vg2-fFrAZy2laxOnE/preview" target="_blank">Click here</a></td>
+                    <td>1</td>
+                    <td>02/06/01</td>
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr>
+                    <td colspan="3">Wiring Diagram
+                        <i class="fa fa-arrow-left"></i>
+                    </td>
+                </tr>
+                <tr class="zir">
+                    <td><a href="https://drive.google.com/file/d/1G2Ed3ZybX0-TzH-fXJyatFR1jXcTUJtm/preview" target="_blank">Click here</a></td>
+                    <td>1</td>
+                    <td>02/06/01</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+
+        $(function () {
+        var i = 0;
+        $("tbody").click(function () {
+            $(this).children().slideDown(500);
+            // $(this).parents("td").find("i").addClass("rotate");
+            if (i === 0) {
+            $("tbody>tr>td>i").addClass("rotate");
+            i = 1; // Set i to 1 after the first click
+            }
+        });
+        });
+
+    </script>
+</body>
+</html>
